@@ -20,11 +20,9 @@ def cuenta_patron(patron, cadena):
     while True:
         index = 0
         cadena_array = cadena_array[start_at:]
-        #print(cadena_array)
         for char in cadena_array:
             if char != patron_array.pop(0):
                 patron_array = list(patron)
-                #print(1)
             else:
                 if len(patron_array) == 0:
                     matches += 1
